@@ -1,0 +1,52 @@
+@import "../../../styles/utils/_variables";
+@import "../../../styles/utils/_mixins";
+
+.navbar {
+    padding: 0px 10px 0 !important;
+    height: $height-navmenu;
+    background-color: $color-background;
+
+    &.colored {
+        background-color: $color-background;
+    }
+
+    &__toggle {
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    &-nav {
+        flex-direction: row;
+    }
+
+    &__notification {
+        position: relative;
+        padding: 3px;
+        border-radius: 50%;
+
+        &:hover {
+            background-color: $color-brand-light;
+        }
+
+        &-new {
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            background-color: $color-danger;
+            border: 1px solid white;
+            border-radius: 50%;
+            top: -2px;
+            right: -1px;
+        }
+
+        &-menu {
+            width: 400px;
+            // height: 300px;
+            overflow: scroll;
+        }
+
+        &-description {
+            white-space: break-spaces;
+        }
+    }
+}

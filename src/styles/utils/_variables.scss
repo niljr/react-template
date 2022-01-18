@@ -1,0 +1,97 @@
+//-------------------------------------//
+// MEDIA QUERIES
+
+$media-lg: 1200px;
+$media-md: 992px;
+$media-sm: 768px;
+$media-xs: 480px;
+
+
+//-------------------------------------//
+// DIMENSIONS
+
+// navmenu height
+$height-navmenu: 63px;
+
+// sidebar
+$sidebar-width: 260px;
+
+// border-radius
+$border-radius-base: 0;
+$border-radius-small: 3px;
+$border-radius-medium: 5px;
+$border-radius-large: 10px;
+
+
+//-------------------------------------//
+// COLORS
+
+// color: background
+$color-background: #fff;
+
+// color: brand
+$color-brand-blue: #0094fe;
+$color-brand-dark: #464646;
+$color-brand-light: #EFEFEF;
+$color-brand-lightGray: #d1d1d1;
+$color-brand-gray: #919191;
+$color-brand-orange: #ffa34d;
+$color-brand-darkBlue: #1d4e8e;
+
+// color: font
+$color-font-base: $color-brand-dark;
+
+$color-primary: $color-brand-blue;
+$color-secondary: #786c90;
+$color-success: #65ad7b;
+$color-warning: #e7b167;
+$color-info: #60a9ca;
+$color-danger: #d5746d;
+$color-light: $color-brand-gray;
+$color-dark: $color-brand-darkBlue;
+
+// colors: links
+$color-link: $color-brand-blue;
+$color-link-hover: lighten($color-brand-blue, 15%);
+
+// color: dividers/borders
+$color-divider: #EFEFEF;
+
+// color: modal background
+$color-modal-bg: #f5f7f9;
+
+// color: shadow
+$color-shadow: rgba(0, 0, 0, 0.11);
+
+
+//-------------------------------------//
+// FONTS
+
+// fonts: base styles
+$font-family-1: 'Source Sans Pro', 'Helvetica Neue', helvetica, arial, sans-serif;
+$font-size-base: 1rem;
+
+// fonts: weights
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 600;
+$font-bold: 700;
+
+
+//-------------------------------------//
+// SPACING
+
+$spacing: 1.75rem;
+$spacing-double: $spacing * 2;
+$spacing-third: $spacing * 3;
+$spacing-half: $spacing / 2;
+
+
+//-------------------------------------//
+// Z:INDEX
+
+$zindex-header: 1000;
+$zindex-dropdown: 1100;
+$zindex-notify: 1300;
+$zindex-modal: 1400;
+$zindex-overlay: 100;

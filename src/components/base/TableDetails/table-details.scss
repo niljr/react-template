@@ -1,0 +1,31 @@
+
+@import '../../../styles/utils/_variables';
+@import '../../../styles/utils/_mixins';
+
+.table-details {
+    .table {
+        border-collapse: collapse;
+        width: 100%;
+
+        th {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        &-responsive-xl {
+            height: 70vh;
+            overflow: scroll;
+        }
+
+        &__header {
+            border-top: 0;
+            background-color: $color-brand-darkBlue;
+            vertical-align: middle;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}

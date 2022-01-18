@@ -1,0 +1,16 @@
+
+@import '../../styles/utils/_variables';
+@import '../../styles/utils/_mixins';
+
+.user-management {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem
+    }
+
+    &__content {
+        margin: 0 12px;
+    }
+}

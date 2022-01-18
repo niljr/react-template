@@ -1,0 +1,80 @@
+
+@import '../../../styles/utils/_variables';
+@import '../../../styles/utils/_mixins';
+
+.collapsible-sidebar {
+    background-color: $color-brand-darkBlue;
+    height: 100%;
+    width: $sidebar-width;
+    transition: all 0.3s;
+    color: $color-brand-light;
+    flex: 0 0 $sidebar-width;
+    position: relative;
+    float: left;
+
+    &.is-open {
+        width: 70px;
+        flex: 0 0 55px;
+    }
+
+    &__brand {
+        border-bottom: 2px solid $color-brand-darkBlue;
+    }
+
+    &__control {
+        display: flex;
+        justify-content: flex-end;
+        background-color: $color-brand-darkBlue;
+        border-radius: $border-radius-large;
+        position: absolute;
+        bottom: 30px;
+        right: -15px;
+        z-index: 1;
+
+        &-button {
+            cursor: pointer;
+            padding: 10px;
+            display: flex;
+        }
+    }
+
+    &__content {
+        transition: all 0.3s;
+        overflow-y: scroll;
+        height: calc(100vh - 65px) !important;
+
+        &.is-visible {
+            display: none;
+        }
+    }
+
+    &__content-menu {
+        .card {
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+
+            &-header {
+                padding: 0;
+                border-bottom: none;
+                background-color: transparent;
+            }
+        }
+    }
+
+    &__menu {
+        padding: 12px;
+
+        &-item {
+            display: flex;
+            padding: 6px $spacing;
+            margin: 4px 0;
+            cursor: pointer;
+
+            &.is-active,
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
